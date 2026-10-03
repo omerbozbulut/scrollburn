@@ -13,15 +13,16 @@
 
   <article id="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective October 2, 2026</p>
+    <p class="muted">Effective October 3, 2026</p>
     <nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
 
     <div class="card">
       <strong>The short version</strong>
       <ul>
-        <li>Scrollburn has no accounts, no ads and no tracking.</li>
-        <li>Your camera feed, workouts, progress and the apps you block stay on your iPhone. We don't have servers that receive them.</li>
-        <li>The only outside service is RevenueCat, which checks your subscription status using an anonymous ID.</li>
+        <li>Scrollburn has no accounts, no ads and no tracking across other apps.</li>
+        <li>Your camera feed, onboarding answers and the apps you block never leave your iPhone.</li>
+        <li>Two outside services are used: RevenueCat checks your subscription, and Google Firebase collects anonymous usage statistics and crash reports. Both use random IDs, not your name or email.</li>
+        <li>You can turn off usage statistics and crash reports anytime in Scrollburn › Settings › Share usage data.</li>
       </ul>
     </div>
 
@@ -36,9 +37,9 @@
     <h3>Screen Time</h3>
     <p>Blocking uses Apple's Screen Time framework (Family Controls). When you choose apps, categories or websites to block, Apple gives the app opaque tokens instead of their names, so we cannot see which apps you picked. Apple's system tracks how long you use the blocked apps so the app can lock them again when your earned time runs out; that usage data stays in Apple's system on your device.</p>
     <h3>Workouts, progress and settings</h3>
-    <p>Your workout history (reps, earned minutes, dates), level, XP, streaks, difficulty and other settings are stored only on your device. They are not synced to iCloud or to any server.</p>
+    <p>Your workout history (reps, earned minutes, dates), level, XP, streaks, difficulty and other settings are stored on your device and are not synced to iCloud. If usage data sharing is on, summary numbers such as the reps and minutes of a finished workout are also sent as anonymous usage statistics (see section 3).</p>
     <h3>Onboarding answers</h3>
-    <p>If you answer the onboarding questions about your daily phone time and age range, the answers are stored only on your device and used to show a personal estimate in the app.</p>
+    <p>If you answer the onboarding questions about your daily phone time and age range, the answers are stored only on your device and used to show a personal estimate in the app. They are never sent anywhere.</p>
     <h3>Notifications</h3>
     <p>Reminders and "earn time" notifications are local notifications created on your device. No push notification service is used.</p>
 
@@ -50,22 +51,34 @@
       <li>purchase information from Apple, such as the product, price, currency, purchase and renewal dates, and trial status,</li>
       <li>basic technical information sent with any network request, such as your IP address, device model, iOS version, app version and App Store country.</li>
     </ul>
+    <p>If usage data sharing is on, RevenueCat also receives the random Firebase ID described in section 3, so subscription events such as renewals and cancellations appear in our usage statistics.</p>
     <p>This information is used only to provide and verify your subscription and to understand subscription revenue. It is not used for advertising and is not combined with data from other apps. RevenueCat's handling of this data is described in its own privacy policy.</p>
 
-    <h2>3. Crash reports</h2>
-    <p>If you have chosen to share analytics with app developers in your iPhone's settings (Settings › Privacy &amp; Security › Analytics &amp; Improvements), Apple may share crash reports and basic usage statistics with us. These do not identify you. You can turn this off at any time in the same place.</p>
+    <h2>3. Usage statistics and crash reports</h2>
+    <p>To understand which features help people and to fix bugs, the app uses <a href="https://firebase.google.com/support/privacy">Google Firebase</a> Analytics and Crashlytics. This is on by default, and you can turn it off at any time in Scrollburn › Settings › Share usage data. When it's off, nothing is sent to Firebase.</p>
+    <p>When it's on, Firebase receives:</p>
+    <ul>
+      <li>a random app instance ID created on your device (reset when you delete the app),</li>
+      <li>how the app is used: for example onboarding steps viewed, whether a permission was granted, the number of blocked items (not which ones), workout summaries (reps, earned minutes, difficulty), level and streak milestones, paywall views and purchase results,</li>
+      <li>if the app crashes: the crash details, the app's state at the time and a short log of recent app actions,</li>
+      <li>technical details: device model, iOS and app version, language, and approximate region derived from your IP address (Google doesn't store the IP address itself for Analytics).</li>
+    </ul>
+    <p>The analytics version we use does not access your device's advertising identifier, and the data is not used for advertising. Google processes it on our behalf under its <a href="https://firebase.google.com/terms/data-processing-terms">data processing terms</a>. Usage statistics are kept for up to 14 months and crash reports for up to 90 days.</p>
+    <p>Separately, if you share analytics with app developers in your iPhone's settings (Settings › Privacy &amp; Security › Analytics &amp; Improvements), Apple may share crash reports and basic usage statistics with us. You can turn this off in the same place.</p>
 
     <h2>4. What we don't do</h2>
     <ul>
       <li>We don't sell, rent or share your information with advertisers or data brokers.</li>
       <li>We don't show ads or include advertising SDKs.</li>
       <li>We don't track you across other companies' apps or websites, and we don't access your device's advertising identifier.</li>
+      <li>We never send your camera feed, your onboarding answers or the names of the apps you block.</li>
       <li>We don't require an account or collect your name, email address or contacts.</li>
     </ul>
 
     <h2>5. Keeping and deleting your data</h2>
     <p>Data stored on your device stays there until you delete it. Deleting the app removes all of it. To stop Screen Time blocking, delete the app or turn off its access in Settings › Screen Time.</p>
-    <p>RevenueCat keeps purchase records as long as needed to provide your subscription and to meet tax and accounting obligations. To ask for this data to be deleted, contact us at the address below. Because the ID is anonymous, it helps if you include the date of your purchase.</p>
+    <p>RevenueCat keeps purchase records as long as needed to provide your subscription and to meet tax and accounting obligations. Firebase keeps usage statistics and crash reports for the periods given in section 3. To stop sending usage data, turn off Share usage data in Settings; deleting the app also resets the random Firebase ID. To ask for stored data to be deleted, contact us at the address below. Because the IDs are random, it helps if you include the date of your purchase or roughly when you used the app.</p>
+    <p>RevenueCat and Google may process data in the United States and other countries, under safeguards such as the EU Standard Contractual Clauses.</p>
     <p>You can manage or cancel your subscription anytime in Settings › [your name] › Subscriptions.</p>
 
     <h2>6. Children</h2>
@@ -85,15 +98,16 @@
 
   <article id="tr" lang="tr">
     <h1>Gizlilik Politikası</h1>
-    <p class="muted">Yürürlük tarihi: 2 Ekim 2026</p>
+    <p class="muted">Yürürlük tarihi: 3 Ekim 2026</p>
     <nav class="lang" aria-label="Dil"><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
 
     <div class="card">
       <strong>Kısaca</strong>
       <ul>
-        <li>Scrollburn'de hesap, reklam ve takip yoktur.</li>
-        <li>Kamera görüntüsü, antrenmanların, ilerlemen ve engellediğin uygulamalar iPhone'unda kalır. Bunları alan bir sunucumuz yoktur.</li>
-        <li>Kullanılan tek dış hizmet, abonelik durumunu anonim bir kimlikle doğrulayan RevenueCat'tir.</li>
+        <li>Scrollburn'de hesap, reklam ve başka uygulamalar arasında takip yoktur.</li>
+        <li>Kamera görüntün, başlangıç sorularına verdiğin yanıtlar ve engellediğin uygulamalar iPhone'undan hiçbir zaman çıkmaz.</li>
+        <li>İki dış hizmet kullanılır: RevenueCat aboneliğini doğrular, Google Firebase ise anonim kullanım istatistikleri ve çökme raporları toplar. İkisi de adını veya e-postanı değil, rastgele kimlikler kullanır.</li>
+        <li>Kullanım istatistiklerini ve çökme raporlarını istediğin zaman Scrollburn › Ayarlar › Kullanım verilerini paylaş bölümünden kapatabilirsin.</li>
       </ul>
     </div>
 
@@ -108,9 +122,9 @@
     <h3>Ekran Süresi</h3>
     <p>Engelleme, Apple'ın Ekran Süresi altyapısını (Family Controls) kullanır. Engellemek için uygulama, kategori veya web sitesi seçtiğinde Apple, uygulamaya bunların adlarını değil şifrelenmiş anahtarlarını verir. Bu yüzden hangi uygulamaları seçtiğini göremeyiz. Kazandığın süre bittiğinde uygulamaları yeniden kilitleyebilmek için engellenen uygulamaların kullanım süresini Apple'ın sistemi takip eder. Bu kullanım verisi cihazındaki Apple sisteminde kalır.</p>
     <h3>Antrenmanlar, ilerleme ve ayarlar</h3>
-    <p>Antrenman geçmişin (tekrarlar, kazanılan dakikalar, tarihler), seviyen, XP'n, serilerin, zorluk seviyen ve diğer ayarların yalnızca cihazında saklanır. iCloud'a veya herhangi bir sunucuya senkronize edilmez.</p>
+    <p>Antrenman geçmişin (tekrarlar, kazanılan dakikalar, tarihler), seviyen, XP'n, serilerin, zorluk seviyen ve diğer ayarların cihazında saklanır ve iCloud'a senkronize edilmez. Kullanım verilerini paylaşma açıksa, biten bir antrenmanın tekrar ve dakika sayısı gibi özet rakamlar anonim kullanım istatistiği olarak da gönderilir (bkz. 3. bölüm).</p>
     <h3>Başlangıç soruları</h3>
-    <p>Günlük telefon kullanım süren ve yaş aralığınla ilgili başlangıç sorularını yanıtlarsan, yanıtların yalnızca cihazında saklanır ve uygulamada sana özel bir tahmin göstermek için kullanılır.</p>
+    <p>Günlük telefon kullanım süren ve yaş aralığınla ilgili başlangıç sorularını yanıtlarsan, yanıtların yalnızca cihazında saklanır ve uygulamada sana özel bir tahmin göstermek için kullanılır. Hiçbir yere gönderilmez.</p>
     <h3>Bildirimler</h3>
     <p>Hatırlatmalar ve "süre kazan" bildirimleri cihazında oluşturulan yerel bildirimlerdir. Herhangi bir push bildirim hizmeti kullanılmaz.</p>
 
@@ -122,22 +136,34 @@
       <li>Apple'dan gelen satın alma bilgileri: ürün, fiyat, para birimi, satın alma ve yenileme tarihleri, deneme durumu,</li>
       <li>her ağ isteğiyle gönderilen temel teknik bilgiler: IP adresi, cihaz modeli, iOS sürümü, uygulama sürümü ve App Store ülkesi.</li>
     </ul>
+    <p>Kullanım verilerini paylaşma açıksa RevenueCat, 3. bölümde anlatılan rastgele Firebase kimliğini de alır. Böylece yenileme ve iptal gibi abonelik olayları kullanım istatistiklerimizde görünür.</p>
     <p>Bu bilgiler yalnızca aboneliğini sağlamak, doğrulamak ve abonelik gelirlerini anlamak için kullanılır. Reklam amacıyla kullanılmaz ve başka uygulamalardan gelen verilerle birleştirilmez. RevenueCat'in bu verileri nasıl işlediği kendi gizlilik politikasında açıklanmıştır.</p>
 
-    <h2>3. Çökme raporları</h2>
-    <p>iPhone ayarlarında analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen (Ayarlar › Gizlilik ve Güvenlik › Analiz ve İyileştirmeler), Apple çökme raporlarını ve temel kullanım istatistiklerini bizimle paylaşabilir. Bunlar seni tanımlamaz. Bu paylaşımı aynı yerden istediğin zaman kapatabilirsin.</p>
+    <h2>3. Kullanım istatistikleri ve çökme raporları</h2>
+    <p>Hangi özelliklerin işe yaradığını anlamak ve hataları düzeltmek için uygulama <a href="https://firebase.google.com/support/privacy">Google Firebase</a> Analytics ve Crashlytics kullanır. Bu varsayılan olarak açıktır ve istediğin zaman Scrollburn › Ayarlar › Kullanım verilerini paylaş bölümünden kapatabilirsin. Kapalıyken Firebase'e hiçbir şey gönderilmez.</p>
+    <p>Açıkken Firebase'e şunlar iletilir:</p>
+    <ul>
+      <li>cihazında oluşturulan rastgele bir uygulama kimliği (uygulamayı silince sıfırlanır),</li>
+      <li>uygulamanın nasıl kullanıldığı: örneğin görüntülenen başlangıç adımları, bir iznin verilip verilmediği, engellenen öğe sayısı (hangileri olduğu değil), antrenman özetleri (tekrar, kazanılan dakika, zorluk), seviye ve seri dönüm noktaları, ödeme ekranı görüntülemeleri ve satın alma sonuçları,</li>
+      <li>uygulama çökerse: çökme ayrıntıları, o andaki uygulama durumu ve son işlemlerin kısa bir kaydı,</li>
+      <li>teknik bilgiler: cihaz modeli, iOS ve uygulama sürümü, dil ve IP adresinden çıkarılan yaklaşık bölge (Google, Analytics için IP adresinin kendisini saklamaz).</li>
+    </ul>
+    <p>Kullandığımız analiz sürümü cihazının reklam kimliğine erişmez ve veriler reklam için kullanılmaz. Google bu verileri <a href="https://firebase.google.com/terms/data-processing-terms">veri işleme şartları</a> kapsamında bizim adımıza işler. Kullanım istatistikleri en fazla 14 ay, çökme raporları en fazla 90 gün saklanır.</p>
+    <p>Bundan ayrı olarak, iPhone ayarlarında analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen (Ayarlar › Gizlilik ve Güvenlik › Analiz ve İyileştirmeler), Apple çökme raporlarını ve temel kullanım istatistiklerini bizimle paylaşabilir. Bunu aynı yerden kapatabilirsin.</p>
 
     <h2>4. Yapmadıklarımız</h2>
     <ul>
       <li>Bilgilerini satmayız, kiralamayız, reklamcılarla veya veri simsarlarıyla paylaşmayız.</li>
       <li>Reklam göstermeyiz, reklam SDK'sı kullanmayız.</li>
       <li>Seni başka şirketlerin uygulama ve web sitelerinde takip etmeyiz, cihazının reklam kimliğine erişmeyiz.</li>
+      <li>Kamera görüntünü, başlangıç sorularına verdiğin yanıtları veya engellediğin uygulamaların adlarını asla göndermeyiz.</li>
       <li>Hesap açmanı istemeyiz. Adını, e-posta adresini veya kişilerini toplamayız.</li>
     </ul>
 
     <h2>5. Verilerin saklanması ve silinmesi</h2>
     <p>Cihazında saklanan veriler sen silene kadar orada kalır. Uygulamayı silmek bu verilerin tamamını siler. Ekran Süresi engellemesini durdurmak için uygulamayı silebilir veya Ayarlar › Ekran Süresi bölümünden erişimini kapatabilirsin.</p>
-    <p>RevenueCat, satın alma kayıtlarını aboneliğini sağlamak ve vergi ile muhasebe yükümlülüklerini yerine getirmek için gerektiği sürece saklar. Bu verilerin silinmesini istemek için aşağıdaki adresten bize ulaşabilirsin. Kimlik anonim olduğu için satın alma tarihini belirtmen işimizi kolaylaştırır.</p>
+    <p>RevenueCat, satın alma kayıtlarını aboneliğini sağlamak ve vergi ile muhasebe yükümlülüklerini yerine getirmek için gerektiği sürece saklar. Firebase, kullanım istatistiklerini ve çökme raporlarını 3. bölümde belirtilen sürelerce saklar. Kullanım verisi göndermeyi durdurmak için Ayarlar'dan Kullanım verilerini paylaş seçeneğini kapatabilirsin; uygulamayı silmek de rastgele Firebase kimliğini sıfırlar. Saklanan verilerin silinmesini istemek için aşağıdaki adresten bize ulaşabilirsin. Kimlikler rastgele olduğu için satın alma tarihini veya uygulamayı yaklaşık ne zaman kullandığını belirtmen işimizi kolaylaştırır.</p>
+    <p>RevenueCat ve Google verileri, AB Standart Sözleşme Maddeleri gibi güvencelerle ABD'de ve başka ülkelerde işleyebilir.</p>
     <p>Aboneliğini istediğin zaman Ayarlar › [adın] › Abonelikler bölümünden yönetebilir veya iptal edebilirsin.</p>
 
     <h2>6. Çocuklar</h2>
